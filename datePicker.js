@@ -201,6 +201,7 @@ class DatePicker extends Component {
     //date = date || new Date();
     let _this = this;
     let options = _.clone(this.props);
+    delete TouchableComponent;
     let date = this.state.date;
     // console.log({ date: moment(date) });
     if (options.mode == "time") {
